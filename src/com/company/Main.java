@@ -20,14 +20,22 @@ public class Main {
             linkedList.add(rand);
         }
         System.out.println("Array before sorting: " + Arrays.toString(array));
+        sort(array);
+        System.out.println("\nArrayList before sorting: " + arrayList);
+        sort(arrayList);
+        System.out.println("\nLinkedList before sorting: " + linkedList);
+        sort(linkedList);
+    }
+
+    public static void sort(int[] array){
         Arrays.sort(array);
         System.out.println("Array after sorting: " + Arrays.toString(array));
-
-        System.out.println("\nArrayList before sorting: " + arrayList);
+    }
+    public static void sort(ArrayList<Integer> arrayList){
         Collections.sort(arrayList);
         System.out.println("ArrayList after sorting: " + arrayList);
-
-        System.out.println("\nLinkedList before sorting: " + linkedList);
+    }
+    public static void sort(LinkedList<Integer> linkedList){
         Collections.sort(linkedList);
         System.out.println("LinkedList after sorting: " + linkedList);
     }
